@@ -5,14 +5,14 @@ export default function Header() {
         <div className="emblem-circle">
           <span className="emblem-text">TA</span>
         </div>
-        <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', letterSpacing: '1px' }}>
+         <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)', letterSpacing: '1px' }}>
           INDIA
         </span>
       </div>
 
       <div className="header-title-block">
-        <h1 className="header-title">TERRITORIAL ARMY</h1>
-        <p className="header-subtitle">OFFICER SELECTION · EXAM PREPARATION</p>
+        <h1 className="header-title">EXAMFORGE</h1>
+         <p className="header-subtitle">OFFICER SELECTION · EXAM PREPARATION</p>
       </div>
 
       <div className="header-badge">

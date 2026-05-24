@@ -64,7 +64,7 @@ export default function App() {
       </main>
 
       <footer className="app-footer">
-        <p>Territorial Army — Exam Preparation Portal &nbsp;|&nbsp; Pattern 2026: Reasoning (40) + GK (30) + English (30) = 100 Marks &nbsp;|&nbsp; Duration: 2 Hours &nbsp;|&nbsp; Negative Marking: –0.33</p>
+        <p>ExamForge — Exam Preparation Portal &nbsp;|&nbsp; Pattern 2026: Reasoning (40) + GK (30) + English (30) = 100 Marks &nbsp;|&nbsp; Duration: 2 Hours &nbsp;|&nbsp; Negative Marking: –0.33</p>
       </footer>
     </div>
   )
