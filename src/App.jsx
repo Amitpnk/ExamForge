@@ -38,6 +38,12 @@ export default function App() {
         >
           <span className="tab-icon">◉</span> Study Material
         </button>
+          <button
+          className={`tab-btn ${activeTab === 'study' ? 'active' : ''}`}
+          onClick={() => setActiveTab('study')}
+        >
+          <span className="tab-icon">◉</span> test
+        </button>
       </nav>
 
       <main className="main-content">
