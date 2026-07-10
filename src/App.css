@@ -627,6 +627,22 @@ body {
   color: white;
 }
 
+.option-btn.correct {
+  border-color: #86efac;
+  background: #dcfce7;
+}
+
+.option-btn.correct .option-letter { background: #22c55e; color: white; }
+
+.option-btn.wrong {
+  border-color: #fca5a5;
+  background: #fee2e2;
+}
+
+.option-btn.wrong .option-letter { background: #ef4444; color: white; }
+
+.option-btn:disabled { cursor: default; }
+
 .option-text {
   font-size: 0.9rem;
   color: #1e293b;
@@ -1432,6 +1448,59 @@ body {
   border-top: 2px solid #bbf7d0;
 }
 
+/* ── Topic Practice ── */
+.practice-score-bar {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 16px;
+}
+
+.practice-score-stat { font-size: 0.85rem; color: #475569; }
+.practice-score-stat strong { color: #1e293b; }
+
+.practice-reset-btn {
+  margin-left: auto;
+  background: none;
+  border: 1.5px solid #2A4E1C;
+  color: #2A4E1C;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.practice-reset-btn:hover { background: #2A4E1C; color: white; }
+
+.practice-question-list { display: grid; gap: 14px; }
+
+.practice-question-card { padding: 16px; }
+
+.practice-question-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.practice-qnum { font-weight: 700; color: #1e293b; font-size: 0.9rem; }
+
+.practice-difficulty {
+  color: white;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
 /* ═══════════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════════ */
@@ -1448,6 +1517,8 @@ body {
 
   .study-page { grid-template-columns: 1fr; }
   .study-sidebar { position: static; }
+
+  .practice-score-bar { flex-wrap: wrap; }
 
   .question-navigator { width: 100%; border-left: none; border-top: 1px solid #e2e8f0; }
 
