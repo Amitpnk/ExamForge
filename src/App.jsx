@@ -4,6 +4,7 @@ import MockExamList from './components/MockExamList'
 import MockExamRunner from './components/MockExamRunner'
 import Results from './components/Results'
 import StudyMaterial from './components/StudyMaterial'
+import TopicPractice from './components/TopicPractice'
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('exams')
@@ -38,11 +39,11 @@ export default function App() {
         >
           <span className="tab-icon">◉</span> Study Material
         </button>
-          <button
-          className={`tab-btn ${activeTab === 'study' ? 'active' : ''}`}
-          onClick={() => setActiveTab('study')}
+        <button
+          className={`tab-btn ${activeTab === 'practice' ? 'active' : ''}`}
+          onClick={() => setActiveTab('practice')}
         >
-          <span className="tab-icon">◉</span> test
+          <span className="tab-icon">🔐</span> Topic Practice
         </button>
       </nav>
 
@@ -67,6 +68,7 @@ export default function App() {
           </>
         )}
         {activeTab === 'study' && <StudyMaterial />}
+        {activeTab === 'practice' && <TopicPractice />}
       </main>
 
       <footer className="app-footer">
