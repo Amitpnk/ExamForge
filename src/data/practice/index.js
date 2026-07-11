@@ -8,6 +8,11 @@ import { statementConclusion } from './statementConclusion'
 import { rankingArrangement } from './rankingArrangement'
 import { seatingArrangement } from './seatingArrangement'
 import { puzzleSolving } from './puzzleSolving'
+import { patternCompletion } from './patternCompletion'
+import { mirrorImages } from './mirrorImages'
+import { embeddedFigures } from './embeddedFigures'
+import { figureSeries } from './figureSeries'
+import { paperFolding } from './paperFolding'
 
 export const practiceTopics = [
   analogy,
@@ -19,5 +24,10 @@ export const practiceTopics = [
   statementConclusion,
   rankingArrangement,
   seatingArrangement,
-  puzzleSolving
+  puzzleSolving,
+  patternCompletion,
+  mirrorImages,
+  embeddedFigures,
+  figureSeries,
+  paperFolding
 ]
