@@ -3,6 +3,7 @@ export const bloodRelations = {
   title: 'Blood Relations',
   icon: '👪',
   color: '#9d174d',
+  category: 'Verbal Reasoning',
   tips: [
     {
       title: 'Types You Will See',

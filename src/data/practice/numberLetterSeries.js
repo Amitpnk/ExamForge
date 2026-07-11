@@ -3,6 +3,7 @@ export const numberLetterSeries = {
   title: 'Number & Letter Series',
   icon: '🔢',
   color: '#1d4ed8',
+  category: 'Verbal Reasoning',
   tips: [
     {
       title: 'Types You Will See',

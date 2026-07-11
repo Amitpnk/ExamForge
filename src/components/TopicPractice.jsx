@@ -10,6 +10,16 @@ export default function TopicPractice() {
 
   const topic = practiceTopics.find(t => t.id === activeTopicId)
 
+  const topicGroups = practiceTopics.reduce((groups, t) => {
+    let group = groups.find(g => g.category === t.category)
+    if (!group) {
+      group = { category: t.category, topics: [] }
+      groups.push(group)
+    }
+    group.topics.push(t)
+    return groups
+  }, [])
+
   function toggleTip(idx) {
     setExpandedTips(s => ({ ...s, [`${activeTopicId}-${idx}`]: !s[`${activeTopicId}-${idx}`] }))
   }
@@ -30,16 +40,21 @@ export default function TopicPractice() {
     <div className="study-page">
       <div className="study-sidebar">
         <div className="study-sidebar-title">Topic Practice</div>
-        {practiceTopics.map(t => (
-          <button
-            key={t.id}
-            className={`study-nav-btn ${activeTopicId === t.id ? 'active' : ''}`}
-            style={{ borderLeftColor: activeTopicId === t.id ? t.color : 'transparent' }}
-            onClick={() => { setActiveTopicId(t.id); setSelected({}) }}
-          >
-            <span className="study-nav-icon">{t.icon}</span>
-            <span>{t.title}</span>
-          </button>
+        {topicGroups.map(group => (
+          <div key={group.category} className="study-nav-group">
+            <div className="study-nav-group-title">{group.category}</div>
+            {group.topics.map(t => (
+              <button
+                key={t.id}
+                className={`study-nav-btn ${activeTopicId === t.id ? 'active' : ''}`}
+                style={{ borderLeftColor: activeTopicId === t.id ? t.color : 'transparent' }}
+                onClick={() => { setActiveTopicId(t.id); setSelected({}) }}
+              >
+                <span className="study-nav-icon">{t.icon}</span>
+                <span>{t.title}</span>
+              </button>
+            ))}
+          </div>
         ))}
       </div>
 

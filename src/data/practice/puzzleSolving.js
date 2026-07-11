@@ -3,6 +3,7 @@ export const puzzleSolving = {
   title: 'Puzzle Solving',
   icon: '🧩',
   color: '#4338ca',
+  category: 'Verbal Reasoning',
   tips: [
     {
       title: 'Types You Will See',

@@ -3,6 +3,7 @@ export const analogy = {
   title: 'Analogy (Word Relationships)',
   icon: '🔗',
   color: '#7c3aed',
+  category: 'Verbal Reasoning',
   tips: [
     {
       title: 'Types You Will See',

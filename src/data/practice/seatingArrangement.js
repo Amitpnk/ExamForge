@@ -3,6 +3,7 @@ export const seatingArrangement = {
   title: 'Seating Arrangement',
   icon: '🪑',
   color: '#b45309',
+  category: 'Verbal Reasoning',
   tips: [
     {
       title: 'Types You Will See',

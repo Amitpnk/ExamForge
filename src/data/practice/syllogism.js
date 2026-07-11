@@ -3,6 +3,7 @@ export const syllogism = {
   title: 'Syllogism',
   icon: '⚖️',
   color: '#0891b2',
+  category: 'Verbal Reasoning',
   tips: [
     {
       title: 'Types You Will See',

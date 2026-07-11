@@ -3,6 +3,7 @@ export const rankingArrangement = {
   title: 'Ranking & Arrangement',
   icon: '🏆',
   color: '#c026d3',
+  category: 'Verbal Reasoning',
   tips: [
     {
       title: 'Types You Will See',

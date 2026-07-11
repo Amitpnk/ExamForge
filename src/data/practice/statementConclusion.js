@@ -3,6 +3,7 @@ export const statementConclusion = {
   title: 'Statement & Conclusion / Assumption',
   icon: '💬',
   color: '#65a30d',
+  category: 'Verbal Reasoning',
   tips: [
     {
       title: 'Types You Will See',

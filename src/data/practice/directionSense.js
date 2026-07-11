@@ -3,6 +3,7 @@ export const directionSense = {
   title: 'Direction Sense',
   icon: '🧭',
   color: '#ea580c',
+  category: 'Verbal Reasoning',
   tips: [
     {
       title: 'Types You Will See',

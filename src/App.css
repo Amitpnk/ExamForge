@@ -1317,6 +1317,17 @@ body {
   margin-bottom: 6px;
 }
 
+.study-nav-group { margin-bottom: 4px; }
+
+.study-nav-group-title {
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #cbd5e1;
+  padding: 10px 12px 4px;
+}
+
 .study-nav-btn {
   width: 100%;
   background: none;

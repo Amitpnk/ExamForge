@@ -3,6 +3,7 @@ export const codingDecoding = {
   title: 'Coding–Decoding',
   icon: '🔐',
   color: '#0f766e',
+  category: 'Verbal Reasoning',
   tips: [
     {
       title: 'Types You Will See',
